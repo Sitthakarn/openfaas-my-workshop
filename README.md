@@ -24,3 +24,5 @@ Example Workflow: Create a new cluster and use it with `kubectl`
 2. `export KUBECONFIG="$(k3d get-kubeconfig --name='k3s-default')"` to make `kubectl` to use the kubeconfig for that cluster
 3. execute some commands like `kubectl get pods --all-namespaces`
 4. `k3d delete` to delete the default cluster
+
+![](Lab1_pic1.png)
