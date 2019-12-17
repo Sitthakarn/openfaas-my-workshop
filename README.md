@@ -21,6 +21,6 @@ Example Workflow: Create a new cluster and use it with `kubectl`
 (*Note:* `kubectl` is not part of `k3d`, so you have to [install it first if needed](https://kubernetes.io/docs/tasks/tools/install-kubectl/))
 
 1. `k3d create` to create a new single-node cluster (docker container)
-2. `export KUBECONFIG=$(k3d get-kubeconfig)` to make `kubectl` to use the kubeconfig for that cluster
+2. `export KUBECONFIG="$(k3d get-kubeconfig --name='k3s-default')"` to make `kubectl` to use the kubeconfig for that cluster
 3. execute some commands like `kubectl get pods --all-namespaces`
 4. `k3d delete` to delete the default cluster
